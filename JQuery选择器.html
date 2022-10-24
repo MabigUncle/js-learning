@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //$('选择器')  里面选择器直接写CSS选择器就好，但是要加引号
+        $('#id')//指定ID元素
+        $('*')//通配符，匹配所有元素
+        $('.class')//获取同一类class元素
+        $('div')//获取同一类标签的所有元素
+        $('div,p,li')//选取多个元素
+        $('li.current')//交集元素
+
+        //jQuery设置样式
+        $('div').css('属性','值')
+
+        //隐式迭代  遍历内部DOM元素的过程就是jQuery中的隐式迭代
+
+
+        //jQuery筛选选择器
+        $('li:first')
+        $('li:last')
+        $('li:eq(index)')//索引号为index的元素
+        $('li:odd')
+        $('li:even')
+    </script>
+</body>
+</html>
